@@ -5,6 +5,8 @@ on:
     # - cron: '* * * * *' # 每分钟触发一次
     - cron: '0 0,3,6,9,12,15,18,21 * * *' # 每3小时触发一次
 
+workflow_dispatch: # 添加手动触发
+
 jobs:
   run_script:
     runs-on: ubuntu-latest
